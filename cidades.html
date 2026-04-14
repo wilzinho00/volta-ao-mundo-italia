@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cidades - Itália</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center gap-2"
+          href="index.html">
+          <img
+            src="img.italia/banderia-italia.jpg"
+            alt="Bandeira da Itália"
+            width="25"
+            height="25"
+            style="object-fit: cover; border-radius: 4px" />
+
+          🇮🇹 ITÁLIA
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cidades.html">CIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comidas.html">COMIDAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="turismo.html">TURISMO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="termos.html">TERMOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TÍTULO -->
+    <div class="container mt-4 text-center">
+      <h2>Cidades da Itália</h2>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div
+      id="carouselCidades"
+      class="carousel slide container mt-4"
+      data-bs-ride="false"
+      data-bs-interval="false">
+      <div class="carousel-inner">
+        <!-- ROMA -->
+        <div class="carousel-item active">
+          <div class="card text-center">
+            <img
+              src="img.italia/roma-cidade.jpg"
+              class="card-img-top img-fluid"
+              alt="Roma" />
+            <div class="card-body">
+              <h5>Roma</h5>
+              <p>Capital histórica da Itália, cheia de monumentos antigos.</p>
+
+              <!-- ESPAÇO PRA VÍDEO -->
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/cidade-Roma.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VENEZA -->
+        <div class="carousel-item">
+          <div class="card text-center">
+            <img
+              src="img.italia/cidade-de-Veneza.jpg"
+              class="card-img-top img-fluid"
+              alt="Veneza" />
+            <div class="card-body">
+              <h5>Veneza</h5>
+              <p>Famosa pelos seus canais e passeios de gôndola.</p>
+
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/cidade-Veneza.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILÃO -->
+        <div class="carousel-item">
+          <div class="card text-center">
+            <img
+              src="img.italia/cidade-de-Milan.jpg"
+              class="card-img-top img-fluid"
+              alt="Milão" />
+            <div class="card-body">
+              <h5>Milão</h5>
+              <p>Centro da moda e negócios da Itália.</p>
+
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/cidade-Milan.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCidades"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCidades"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- BOTÕES DE NAVEGAÇÃO -->
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-secondary m-1">⬅ Voltar</a>
+      <a href="comidas.html" class="btn btn-success m-1">Próximo ➡</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-5 p-4 bg-dark text-white position-relative">
+      <div class="container text-center py-4">
+        <p>
+          Volta ao Mundo - Itália &copy;2026 Desenvolvido por Wilciano
+          Nascimento
+        </p>
+
+        <p>
+          Site oficial de turismo da Itália click em
+          <a href="https://www.italia.it" target="_blank">Saiba Mais!</a>
+        </p>
+
+        <p>
+          <a href="termos.html" class="text-white text-decoration-none">
+            Política de Privacidade - Termos de Uso
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGENS LATERAIS -->
+      <img src="img.italia/img.coliseu.jpg" class="img-left" alt="" />
+      <img src="img.italia/img.torre.pisa.jpg" class="img-right" alt="" />
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".carousel").forEach((carousel) => {
+        new bootstrap.Carousel(carousel, {
+          interval: false,
+          ride: false,
+        });
+      });
+    </script>
+  </body>
+</html>

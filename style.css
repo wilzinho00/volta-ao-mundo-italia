@@ -1,0 +1,355 @@
+/* =========================
+   🎨 CORES DA ITÁLIA
+========================= */
+:root {
+    --verde-italia: #009246;
+    --branco-italia: #ffffff;
+    --vermelho-italia: #ce2b37;
+}
+
+/* =========================
+   🌐 BASE DO SITE
+========================= */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   🧭 NAVBAR
+========================= */
+.navbar {
+    background: linear-gradient(
+        to right,
+        var(--verde-italia),
+        var(--branco-italia),
+        var(--vermelho-italia)
+    ) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #000 !important;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   🏠 HERO (HOME)
+========================= */
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--verde-italia),
+        var(--vermelho-italia)
+    );
+    color: white;
+    padding: 50px 50px;
+}
+
+.hero h1 {
+    font-weight: 600;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.3);
+}
+
+.hero p{
+    font-size: 1rem;
+    margin-top: auto;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+}
+
+.hero-img {
+  width: 100%;
+  height:250px;
+  object-fit: cover;
+  
+}
+
+.borda-preta {
+  border: 2px solid #222;
+  border-radius: 10px; 
+}
+
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-container.row {
+  display: flex;
+  align-items: center; 
+  margin-top: auto;
+}
+
+
+/* =========================
+   📦 CARDS
+========================= */
+.card-custom {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 05px 10px 15px rgba(0,0,0,0.2);
+}
+
+.tooltip {
+    z-index: 9999;
+}
+
+
+/* =========================
+   🎠 CARROSSEL
+========================= */
+.carousel {
+    max-width: 900px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* =========================
+   🔘 BOTÕES
+========================= */
+.btn {
+    border-radius: 25px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--verde-italia);
+    border: none;
+}
+
+.btn-success {
+    background-color: var(--verde-italia);
+    border: none;
+}
+
+.btn-danger {
+    background-color: var(--vermelho-italia);
+    border: none;
+}
+
+.btn-secondary {
+    border-radius: 25px;
+}
+
+/* =========================
+   📝 TÍTULOS
+========================= */
+h1, h2{
+    color: #222;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 16px;
+}
+
+h5.p {
+  background: linear-gradient(#f4ecd8, #e8dcc0);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d6c7a1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+  color: #3b2f2f;
+}
+
+.texto-scroll {
+  max-height: 200px;
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+
+/* =========================
+   📺 VÍDEOS RESPONSIVOS
+========================= */
+.ratio iframe {
+    border-radius: 10px;
+}
+
+/* =========================
+   🇮🇹 BORDA ITÁLIA NO CARD
+========================= */
+.card-italia {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, green, white, red) border-box;
+    overflow: hidden; 
+}
+
+/* =========================
+   🖼️ IMAGENS ORGANIZADAS
+========================= */
+.card-italia img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   ➗ DIVISÃO ENTRE IMAGENS
+========================= */
+.card-italia img + img {
+    border-top: 2px solid white;
+}
+
+/* =========================
+   🦶 FOOTER
+========================= */
+footer {
+    background-color: var(--vermelho-italia);
+    color: white;
+    font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  
+}
+
+.footer-custom {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.footer-p-links{
+    font-size: 14px;
+    justify-content: center;
+}
+
+
+/* Imagens Laterais */
+.img-left,
+.img-right {
+  position: absolute;
+  top: 0;
+  height: 100%;  
+  width: 200px;
+  object-fit: cover;
+  opacity: 5;
+  filter: grayscale(100%) brightness(0.7);
+}
+
+.img-left {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    width: 120px;
+    opacity: 0.7;
+}
+
+.img-right {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 120px;
+    opacity: 0.7;
+}
+
+/* =========================
+   SITE RESPONSIVO 100%
+========================= */
+/* =========================
+   📱 MOBILE (até 768px)
+========================= */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    /* IMAGEM HERO */
+    .hero img {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    /* CARROSSEL */
+    .carousel .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* BOTÕES */
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    /* ESCONDE IMAGENS LATERAIS NO MOBILE */
+    .img-left,
+    .img-right {
+        display: none;
+    }
+
+    /* REDES SOCIAIS */
+    footer .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   📲 TABLET (até 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .carousel .card img {
+        height: 250px;
+    }
+
+    /* IMAGENS DO FOOTER MENORES */
+    .img-left,
+    .img-right {
+        width: 80px;
+        opacity: 0.6;
+    }
+}
+
+

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turismo - Itália</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR RESPONSIVA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center gap-2"
+          href="index.html">
+          <img
+            src="img.italia/banderia-italia.jpg"
+            alt="Bandeira da Itália"
+            width="25"
+            height="25"
+            style="object-fit: cover; border-radius: 4px" />
+
+          🇮🇹 ITÁLIA
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cidades.html">CIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comidas.html">COMIDAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="turismo.html">TURISMO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="termos.html">TERMOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TÍTULO -->
+    <div class="container mt-4 text-center">
+      <h2>Pontos Turísticos da Itália</h2>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div
+      id="carouselTurismo"
+      class="carousel slide container mt-4"
+      data-bs-ride="false"
+      data-bs-interval="false">
+      <div class="carousel-inner">
+        <!-- COLISEU -->
+        <div class="carousel-item active">
+          <div class="card text-center">
+            <img
+              src="img.italia/coliseu-italia.jpg"
+              class="card-img-top img-fluid"
+              alt="Coliseu" />
+            <div class="card-body">
+              <h5>Coliseu</h5>
+              <p>
+                Um dos monumentos mais famosos do mundo, localizado em Roma.
+              </p>
+
+              <!-- VÍDEOS -->
+              <!--COLISEU-->
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/turismo-Coliseu.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TORRE DE PISA -->
+        <div class="carousel-item">
+          <div class="card text-center">
+            <img
+              src="img.italia/torre-de-Piza.jpg"
+              class="card-img-top img-fluid"
+              alt="Torre de Pisa" />
+            <div class="card-body">
+              <h5>Torre de Pisa</h5>
+              <p>Famosa por sua inclinação única.</p>
+
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/turismo-Torre-de-Pisa.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VATICANO -->
+        <div class="carousel-item">
+          <div class="card text-center">
+            <img
+              src="img.italia/vaticano-italia.jpg"
+              class="card-img-top img-fluid"
+              alt="Vaticano" />
+            <div class="card-body">
+              <h5>Vaticano</h5>
+              <p>
+                Centro da Igreja Católica e um dos locais mais visitados do
+                mundo.
+              </p>
+
+              <div class="ratio ratio-16x9 mt-3">
+                <video controls autoplay muted loop class="w-100">
+                  <source
+                    src="videos.italia/turismo- Vaticano.mp4"
+                    type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselTurismo"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselTurismo"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- BOTÕES DE NAVEGAÇÃO -->
+    <div class="text-center mt-4">
+      <a href="comidas.html" class="btn btn-secondary m-1">⬅ Voltar</a>
+      <a href="index.html" class="btn btn-primary m-1">Home</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-5 p-4 bg-dark text-white position-relative">
+      <div class="container text-center py-4">
+        <p>
+          Volta ao Mundo - Itália &copy;2026 Desenvolvido por Wilciano
+          Nascimento
+        </p>
+
+        <p>
+          Site oficial de turismo da Itália click em
+          <a href="https://www.italia.it" target="_blank">Saiba Mais!</a>
+        </p>
+
+        <p>
+          <a href="termos.html" class="text-white text-decoration-none">
+            Política de Privacidade - Termos de Uso
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGENS LATERAIS -->
+      <img src="img.italia/img.coliseu.jpg" class="img-left" alt="" />
+      <img src="img.italia/img.torre.pisa.jpg" class="img-right" alt="" />
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.querySelectorAll(".carousel").forEach((carousel) => {
+        new bootstrap.Carousel(carousel, {
+          interval: false,
+          ride: false,
+        });
+      });
+    </script>
+  </body>
+</html>

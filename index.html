@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>volta-ao-mundo-italia</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR RESPONSIVA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center gap-2"
+          href="index.html">
+          <img
+            src="img.italia/banderia-italia.jpg"
+            alt="Bandeira da Itália"
+            width="25"
+            height="25"
+            style="object-fit: cover; border-radius: 4px" />
+
+          🇮🇹 ITÁLIA
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cidades.html">CIDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comidas.html">COMIDAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="turismo.html">TURISMO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="termos.html">TERMOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container mt-10 hero-container">
+        <div class="row align-items-center">
+          <!-- TEXTO PRINCIPAL -->
+          <div class="col-md-7 text-center text-md-start">
+            <h1 class="display-5 fw-bold">Bem-vindo à Itália</h1>
+            <p class="lead">
+              “Descubra a Itália: um país que encanta com sua história, cultura,
+              sabores e paisagens inesquecíveis.”
+            </p>
+
+            <!-- BOTÃO para mostra a história (colaspsável)-->
+            <h5
+              data-bs-toggle="collapse"
+              data-bs-target="#historiaItalia"
+              class="fw-bold text-white mt-3"
+              style="
+                cursor: pointer;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+              ">
+              🇮🇹 Ver a História
+            </h5>
+            <!-- BALÃO (COLLAPSE) -->
+            <div class="collapse mt-3" id="historiaItalia">
+              <div class="card card-body">
+                <!-- TEXTO CLICÁVEL -->
+                <p class="mt-3">
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#historiaItalia"
+                    role="button"
+                    aria-expanded="false"
+                    class="fw-bold text-danger text-decoration-none"
+                    style="cursor: pointer">
+                  </a>
+                </p>
+
+                <!-- HISTÓRIA -->
+                <div class="collapse" id="historiaItalia">
+                  <div class="card card-body mt-2 text-dark shadow-sm">
+                    <h5 class="fw-bold text-danger mb-3">
+                      🇮🇹 A Formação da Itália Moderna
+                    </h5>
+
+                    <div class="texto-scroll">
+                      <p>
+                        A história da Itália começa na Antiguidade, quando a
+                        região foi habitada por diversos povos, como os
+                        etruscos, antes da ascensão de Roma. Com o tempo, Roma
+                        se tornou o centro de um dos maiores impérios da
+                        história, o Império Romano.
+                      </p>
+
+                      <p>
+                        Esse império dominou grande parte da Europa, do norte da
+                        África e do Oriente Médio, deixando um legado cultural,
+                        político e arquitetônico que influencia o mundo até
+                        hoje.
+                      </p>
+
+                      <p>
+                        Após a queda do Império Romano no século V, a região
+                        passou por um longo período de fragmentação, sendo
+                        dividida em vários reinos e cidades independentes.
+                      </p>
+
+                      <p>
+                        Durante a Idade Média, cidades como Roma, Veneza e
+                        Florença ganharam destaque econômico e cultural,
+                        preparando o cenário para um dos períodos mais
+                        importantes da história: o Renascimento.
+                      </p>
+
+                      <p>
+                        Entre os séculos XIV e XVI, o Renascimento transformou a
+                        arte, a ciência e o pensamento humano, com grandes nomes
+                        como Leonardo da Vinci e Michelangelo.
+                      </p>
+
+                      <p>
+                        No século XIX, surgiu o movimento de unificação
+                        italiana, conhecido como Risorgimento, que buscava unir
+                        os diversos estados da península.
+                      </p>
+
+                      <p>
+                        Em 1861, a Itália foi oficialmente unificada, dando
+                        origem ao país como conhecemos hoje.
+                      </p>
+
+                      <p>
+                        Atualmente, a Itália é reconhecida mundialmente por sua
+                        rica história, cultura e influência global, sendo um dos
+                        destinos mais admirados do planeta.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LADO DIREITO (OPCIONAL IMAGEM OU CARD) -->
+          <div class="col-md-5 text-center">
+            <img
+              src="img.italia/casal.img.jpg"
+              class="img-fluid rounded shadow borda-preta" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROSSEL -->
+    <div
+      id="carouselHome"
+      class="carousel slide container mt-4"
+      data-bs-ride="false"
+      data-bs-interval="false">
+      <div class="carousel-inner">
+        <!-- ITEM 1 -->
+        <div class="carousel-item active">
+          <div class="card text-center card-italia">
+            <img
+              src="img.italia/Milan-cidade.jpg"
+              class="card-img-top img-fluid"
+              alt="Milan" />
+            <img
+              src="img.italia/Italia-cidade.jpg"
+              class="card-img-top img-fluid"
+              alt="Cidades" />
+            <div class="card-body">
+              <h5>Cidades</h5>
+              <p>Explore cidades históricas incríveis</p>
+              <a href="cidades.html" class="btn btn-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="carousel-item">
+          <div class="card text-center card-italia">
+            <img
+              src="img.italia/prato-massa-chique.jpg"
+              class="card-img-top img-fluid"
+              alt="Comidas" />
+            <img
+              src="img.italia/lasanha-prato.jpg"
+              class="card-img-top img-fluid"
+              alt="Comidas" />
+            <div class="card-body">
+              <h5>Comidas</h5>
+              <p>Descubra sabores italianos</p>
+              <a href="comidas.html" class="btn btn-success">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="carousel-item">
+          <div class="card text-center card-italia">
+            <img
+              src="img.italia/dentro-coliseu.jpg"
+              alt="Coliseu"
+              class="card-img-top img-fluid" />
+            <img
+              src="img.italia/vaticano-pessoas.jpg"
+              class="card-img-top img-fluid"
+              alt="Vaticano" />
+            <div class="card-body">
+              <h5>Turismo</h5>
+              <p>Conheça lugares famosos</p>
+              <a href="turismo.html" class="btn btn-danger">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselHome"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselHome"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- BOTÕES DE NAVEGAÇÃO -->
+    <div class="text-center mt-4">
+      <a href="cidades.html" class="btn btn-outline-primary m-1">Cidades</a>
+      <a href="comidas.html" class="btn btn-outline-success m-1">Comidas</a>
+      <a href="turismo.html" class="btn btn-outline-danger m-1">Turismo</a>
+    </div>
+
+    <footer class="text-center mt-5 p-4 bg-dark text-white position-relative">
+      <div class="container text-center py-4">
+        <p>
+          Volta ao Mundo - Itália &copy;2026 Desenvolvido por Wilciano
+          Nascimento
+        </p>
+
+        <p>
+          Site oficial de turismo da Itália click em
+          <a href="https://www.italia.it" target="_blank">Saiba Mais!</a>
+        </p>
+
+        <p>
+          <a href="termos.html" class="text-white text-decoration-none">
+            Política de Privacidade - Termos de Uso
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGENS LATERAIS -->
+      <img src="img.italia/img.coliseu.jpg" class="img-left" alt="" />
+      <img src="img.italia/img.torre.pisa.jpg" class="img-right" alt="" />
+    </footer>
+
+    <!-- Bootstrap JS (OBRIGATÓRIO pro carrossel funcionar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".carousel").forEach((carousel) => {
+        new bootstrap.Carousel(carousel, {
+          interval: false,
+          ride: false,
+        });
+      });
+    </script>
+  </body>
+</html>
